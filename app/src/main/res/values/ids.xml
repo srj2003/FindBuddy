@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvHelloUser" type="id" />
+    <item name="btnPairedDevices" type="id" />
+    <item name="btnBluetoothOff" type="id" />
+    <item name="btnBluetoothOn" type="id" />
+</resources>

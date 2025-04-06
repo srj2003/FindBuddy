@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHelloUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_user"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Dashboard Cards Section -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="8dp">
+
+        <!-- Bluetooth ON Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FF212121">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_bluetooth_on"
+                    app:tint="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnBluetoothOn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turn_on"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bluetooth OFF Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FF424242">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_bluetooth_off"
+                    app:tint="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnBluetoothOff"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turn_off"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Paired Devices Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FF212121">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_devices"
+                    app:tint="@android:color/white"
+                    android:contentDescription="@string/paired_devices" />
+
+                <Button
+                    android:id="@+id/btnPairedDevices"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paired_devices"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Logout Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FF424242">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_logout"
+                    app:tint="@android:color/white"
+                    android:contentDescription="@string/logout" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="12dp"-->
+<!--        android:gravity="center">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvCoordinates"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Lat: -&#45;&#45;, Lng: -&#45;&#45;"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginBottom="16dp" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgCompass"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:src="@drawable/compass"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:contentDescription="Compass" />-->
+<!--    </LinearLayout>-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="380dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="12dp"-->
+<!--        app:cardElevation="4dp"-->
+<!--        app:cardBackgroundColor="#FF1E1E1E"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="16dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="12dp"-->
+<!--                android:text="Connection Status"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Bluetooth:"-->
+<!--                        android:textColor="@android:color/darker_gray"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvBluetoothStatus"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="Connected"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Devices Paired:"-->
+<!--                        android:textColor="@android:color/darker_gray"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPairedDevicesCount"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <!-- Footer Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_dashboard_v1_0"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

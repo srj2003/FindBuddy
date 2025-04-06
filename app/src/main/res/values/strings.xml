@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="logout">Logout</string>
+    <string name="bluetooth_dashboard_v1_0">Bluetooth Dashboard v1.0</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="hello_user">Hello User!</string>
+    <string name="turn_on">Turn ON</string>
+    <string name="turn_off">Turn OFF</string>
+    <string name="todo">TODO</string>
+    <string name="no_paired_devices" />
+    <string name="connection_status">Connection Status</string>
+    <string name="connected">Connected</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+</resources>

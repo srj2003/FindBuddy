@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031038686329",
+    "project_id": "findbuddy-2b5ed",
+    "storage_bucket": "findbuddy-2b5ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031038686329:android:9b870a097b7e3bf2fbb0a8",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBy4qqX0SKmpkzHTyamPbo4FYaAPwtL5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
