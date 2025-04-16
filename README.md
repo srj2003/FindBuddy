@@ -5,7 +5,7 @@
 A Bluetooth-powered security solution to protect your valuables from theft or loss.
 
 ## Table of Contents
-- [Features](#features)
+- [Features](## Features ✨)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
