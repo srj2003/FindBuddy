@@ -4,15 +4,6 @@
 
 A Bluetooth-powered security solution to protect your valuables from theft or loss.
 
-## Table of Contents
-- [Features](## Features ✨)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technical Specifications](#technical-specifications)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features ✨
 - **Instant Alerts**: Get notified when tagged items move beyond safe range
 - **Dual Protection**: Both mobile alarm and tag LED indicators
