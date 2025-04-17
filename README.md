@@ -11,6 +11,9 @@ A Bluetooth-powered security solution to protect your valuables from theft or lo
 - **Compact Design**: Discreet 3cm tag with customizable casing
 - **Long Battery**: Up to 6 months standby time (CR2032 battery)
 
+## Website
+https://fndbuddy.netlify.app/
+
 ## Screenshots 📱
 ![FindBuddy Logo](https://i.postimg.cc/3w1X8FYz/logo-1.png)
 ## Installation ⚙️
